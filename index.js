@@ -2,10 +2,12 @@ import express from "express";
 import morgan from "morgan";
 import uniqid from "uniqid";
 import fs from "fs";
+import cors from "cors";
 
 const app = express();
 const filePath = "data.json";
 
+app.use(cors());
 app.use(morgan("dev"));
 app.use(express.json());
 
