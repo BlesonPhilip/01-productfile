@@ -1,19 +1,20 @@
 [
   {
-    "title": "iphone",
-    "description": "iphone 16",
-    "price": "78k"
+    "id": "r94y57uwm8svwya8",
+    "title": "Iphone 16",
+    "description": "BUILT FOR APPLE INTELLIGENCE — Apple Intelligence is the personal intelligence system that helps you write, express yourself and get things done effortlessly. With groundbreaking privacy protections, it gives you peace of mind that no one else can access your data — not even Apple.",
+    "price": "75000"
   },
   {
-    "id": "r94y538om8q1l31i",
-    "title": "samsung",
-    "description": "a30",
-    "price": 4000
+    "id": "r94y5h0cm8sw561r",
+    "title": "Samsung 13",
+    "description": "BUILT FOR APPLE INTELLIGENCE — Apple Intelligence is the personal intelligence system that helps you write, express yourself and get things done effortlessly. With groundbreaking privacy protections, it gives you peace of mind that no one else can access your data — not even Apple.",
+    "price": "15000"
   },
   {
-    "id": "r94y5evgm8rkvzpu",
-    "title": "fan",
-    "description": "dddd",
-    "price": "100"
+    "id": "r94y5gscm8sw5j4r",
+    "title": "Poco",
+    "description": "BUILT FOR APPLE INTELLIGENCE — Apple Intelligence is the personal intelligence system that helps you write, express yourself and get things done effortlessly. With groundbreaking privacy protections, it gives you peace of mind that no one else can access your data — not even Apple.",
+    "price": "4500"
   }
 ]
