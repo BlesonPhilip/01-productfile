@@ -3,13 +3,33 @@ import morgan from "morgan";
 import uniqid from "uniqid";
 import fs from "fs";
 import cors from "cors";
+import multer from "multer";
 
 const app = express();
 const filePath = "data.json";
 
-app.use(cors());
+app.use(cors()); //for frontend access
+// Middleware to check if the file exists and create it if not
 app.use(morgan("dev"));
 app.use(express.json());
+
+app.use("/img", express.static("public/img"));
+
+const storage = multer.diskStorage({
+  destination: "public/img/",
+  filename: (req, file, cb) => {
+    cb(null, `${uniqid()}_${file.originalname}`);
+  },
+});
+const upload = multer({ storage: storage });
+//const upload = multer({ dest: 'public/img' });
+app.post("/upload", upload.single("image"), (req, res) => {
+  const { filename } = req.file;
+  return res.status(201).json({
+    message: "File Uploaded",
+    url: `http://localhost:3000/img/${filename}`,
+  });
+});
 
 // Read all details
 app.get("/detail", (req, res) => {
